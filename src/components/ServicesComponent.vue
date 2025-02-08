@@ -21,17 +21,17 @@
           {
             title: 'Service 1',
             description: 'Description for service 1.',
-            image: require('../assets/images/service1.jpg'),
+            image: require('./../assets/images/service1.jpg'),
           },
           {
             title: 'Service 2',
             description: 'Description for service 2.',
-            image: require('../assets/images/service2.jpg'),
+            image: require('./../assets/images/service2.jpg'),
           },
           {
             title: 'Service 3',
             description: 'Description for service 3.',
-            image: require('../assets/images/service3.jpg'),
+            image: require('./../assets/images/service3.jpg'),
           },
         ],
       };
