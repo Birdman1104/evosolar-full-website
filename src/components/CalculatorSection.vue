@@ -129,7 +129,7 @@
 
 input[type="number"],
 select {
-    width: 50%;
+    width: 25%;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 4px;

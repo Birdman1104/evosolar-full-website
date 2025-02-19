@@ -5,6 +5,7 @@
     <BlocksSection />
     <OfferSection />
     <CalculatorButton />
+    <CasesSection />
     <CalculatorSection />
   </div>
 </template>
@@ -15,6 +16,7 @@ import Services from './components/ServicesComponent.vue';
 import BlocksSection from './components/BlocksSection.vue';
 import OfferSection from './components/OfferSection.vue';
 import CalculatorButton from './components/CalculatorButton.vue';
+import CasesSection from './components/CasesSection.vue';
 import CalculatorSection from './components/CalculatorSection.vue';
 
 export default {
@@ -25,6 +27,7 @@ export default {
     OfferSection,
     CalculatorButton,
     CalculatorSection,
+    CasesSection,
   },
 };
 </script>
