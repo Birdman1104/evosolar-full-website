@@ -1,7 +1,8 @@
 <template>
     <section id="cases">
-        <h2>Cases</h2>
-        <p class="cases-description">Lorem ipsum dolor sit amet consectetur. Ipsum consequat ac egestas vestibulum
+        <h2>OUR PROJECTS</h2>
+        <p class="cases-description">
+            Lorem ipsum dolor sit amet consectetur. Ipsum consequat ac egestas vestibulum
             integer vivamus ullamcorper
             ultrices. Proin eu at tortor eget. Semper sed mattis volutpat urna at congue. Nibh arcu proin iaculis
             odio.
@@ -53,7 +54,6 @@ export default {
 }
 
 .cases-description {
-    max-width: 800px;
     margin: 10 auto;
     font-size: 0.8rem;
     line-height: 1.6;

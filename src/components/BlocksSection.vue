@@ -1,8 +1,11 @@
 <template>
-  <section id="blocks" class="blocks">
-    <div class="block" v-for="(block, index) in blocks" :key="index">
-      <h3>{{ block.title }}</h3>
-      <p>{{ block.text }}</p>
+  <section id="blocks" class="blocks-section">
+    <h2>Why Choose Us?</h2>
+    <div class="blocks">
+      <div class="block" v-for="(block, index) in blocks" :key="index">
+        <h3>{{ block.title }}</h3>
+        <p>{{ block.text }}</p>
+      </div>
     </div>
   </section>
 </template>
@@ -12,10 +15,10 @@ export default {
   data() {
     return {
       blocks: [
-        { title: 'Block 1', text: 'Text for block 1.' },
-        { title: 'Block 2', text: 'Text for block 2.' },
-        { title: 'Block 3', text: 'Text for block 3.' },
-        { title: 'Block 4', text: 'Text for block 4.' },
+        { title: 'Experience', text: 'Our team consists of experienced solar specialists who are dedicated to their mission and continuously invest in professional development.' },
+        { title: 'Quality', text: 'We use only high-quality solar panels, equipment, and components to ensure reliability and efficiency.' },
+        { title: 'Customer-Centric Approach', text: 'We provide personalized solutions for each client to meet their unique energy needs and goals.' },
+        { title: 'Sustainability', text: 'We are committed to protecting the environment and creating a GREEN planet.' },
       ],
     };
   },
@@ -23,6 +26,18 @@ export default {
 </script>
 
 <style scoped>
+.blocks-section {
+  background: #04210c;
+  padding: 20px;
+
+}
+
+.blocks-section h2 {
+  text-align: center;
+  color: white;
+
+}
+
 .blocks {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -46,6 +61,7 @@ export default {
   border: 5px solid #237878;
   padding: 20px;
   color: white;
+  text-align: center;
 }
 
 .block:only-child,

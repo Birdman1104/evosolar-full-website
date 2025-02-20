@@ -1,13 +1,6 @@
 <template>
     <section id="partners" class="partners-section">
-        <h2>Partners we trust</h2>
-        <p class="partners-description">Lorem ipsum dolor sit amet consectetur. Ipsum consequat ac egestas vestibulum
-            integer vivamus ullamcorper
-            ultrices. Proin eu at tortor eget. Semper sed mattis volutpat urna at congue. Nibh arcu proin iaculis
-            odio.
-            Ridiculus lorem sit facilisi.
-        </p>
-
+        <h2>OUR PARTNERS</h2>
         <div class="slider-container">
             <div class="slider">
                 <a v-for="(partner, index) in partners" :key="index" :href="partner.url">
