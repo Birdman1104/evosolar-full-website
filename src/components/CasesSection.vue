@@ -8,7 +8,7 @@
             Ridiculus lorem sit facilisi.
         </p>
         <div class="cases-section">
-            <div class="case" v-for="(block, index) in blocks" :key="index">
+            <div class="case" v-for="(block, index) in cases" :key="index">
                 <h3>{{ block.title }}</h3>
                 <p>{{ block.text }}</p>
             </div>
@@ -20,7 +20,7 @@
 export default {
     data() {
         return {
-            blocks: [
+            cases: [
                 { title: 'Service', units: ['XY unit', 'YY unit'] },
                 { title: 'Service', units: ['XX unit', 'XY unit', 'YY unit'] },
                 { title: 'Service', units: ['XX unit', 'XY unit', 'YY unit'] },
