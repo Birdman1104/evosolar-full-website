@@ -8,6 +8,7 @@
     <PartnersSection />
     <CalculatorSection />
     <ContactsSection />
+    <EmailContact />
     <CalculatorButton />
   </div>
 </template>
@@ -22,6 +23,7 @@ import CasesSection from './components/CasesSection.vue';
 import CalculatorSection from './components/CalculatorSection.vue';
 import PartnersSection from './components/PartnersSection.vue';
 import ContactsSection from './components/ContactsSection.vue';
+import EmailContact from './components/EmailContact.vue';
 
 export default {
   components: {
@@ -34,6 +36,7 @@ export default {
     PartnersSection,
     CasesSection,
     ContactsSection,
+    EmailContact,
   },
 };
 </script>
