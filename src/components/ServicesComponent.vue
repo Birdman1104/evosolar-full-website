@@ -48,7 +48,7 @@ export default {
 <style scoped>
 .services {
   background: white;
-  padding: 50px 20px;
+  padding: 30px 20px;
   text-align: center;
 }
 
@@ -56,6 +56,7 @@ export default {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 30px;
   gap: 20px;
 }
 

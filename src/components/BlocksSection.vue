@@ -27,7 +27,7 @@ export default {
 
 <style scoped>
 .blocks-section {
-  background: #04210c;
+  background: #081C10;
   padding: 20px;
 
 }
@@ -35,7 +35,6 @@ export default {
 .blocks-section h2 {
   text-align: center;
   color: white;
-
 }
 
 .blocks {
@@ -43,7 +42,6 @@ export default {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto;
   gap: 10px;
-  background: #04210c;
   padding: 20px;
 }
 
@@ -58,15 +56,30 @@ export default {
 }
 
 .block {
-  border: 5px solid #237878;
+  border: 1px solid #55B17A;
+  background-color: #2C61411A;
   padding: 20px;
   color: white;
   text-align: center;
+  border-radius: 15px;
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 .block:only-child,
 .block:last-child:nth-child(4n-3) {
   grid-column: span 12;
+}
+
+.block h3 {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.block p {
+  font-weight: 100;
 }
 
 @media (max-width: 768px) {
