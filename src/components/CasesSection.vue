@@ -10,8 +10,23 @@
         </p>
         <div class="cases-section">
             <div class="case" v-for="(block, index) in cases" :key="index">
+                <img src="../assets/images/service1.jpg" alt="" class="case-image">
+                <div class="overlay"></div>
+
                 <h3>{{ block.title }}</h3>
-                <p>{{ block.text }}</p>
+                <div class="units-wrapper">
+                    <div class="unit-tools">
+                        <div class="unit" v-for="(unit, index) in block.units" :key="index">
+                            <div class="units-icon"><img src="../assets/icons/tool.png" alt="?"><span
+                                    class="unit-name">{{ unit }}</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" v-for="(service, index) in services" :key="index">
+                <h3>{{ service.title }}</h3>
+                <p>{{ service.description }}</p>
             </div>
         </div>
     </section>
@@ -32,7 +47,6 @@ export default {
     },
 };
 </script>
-
 
 <style scoped>
 #cases {
@@ -65,7 +79,6 @@ export default {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto auto;
     gap: 10px;
-
 }
 
 .case:nth-child(4n-3),
@@ -79,14 +92,77 @@ export default {
 }
 
 .case {
-    border: 5px solid #237878;
-    padding: 20px;
+    border: 2px solid #ffffff;
+    flex: 1 1 30%;
+    position: relative;
+    text-align: left;
     color: white;
+    height: 300px;
+}
+
+.case-image {
+    width: 100%;
+    height: 300px;
+}
+
+.case,
+.case-image,
+.overlay {
+    border-radius: 15px;
+}
+
+.case h3 {
+    position: absolute;
+    top: 75%;
+    left: 15px;
+    transform: translate(0, -50%);
+}
+
+.units-wrapper {
+    position: absolute;
+    top: 90%;
+    left: 15px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-color: #000000;
 }
 
 .case:only-child,
 .case:last-child:nth-child(4n-3) {
     grid-column: span 12;
+}
+
+.unit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.units-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unit-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.units-icon img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
 }
 
 @media (max-width: 768px) {
